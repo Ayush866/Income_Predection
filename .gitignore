@@ -5,8 +5,9 @@ __pycache__/
 artifact
 # C extensions
 *.so
+*. csv
 prediction
-saved_models
+
 demotest.py
 logs
 artifacts
