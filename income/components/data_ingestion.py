@@ -33,6 +33,13 @@ class DataIngestion:
 
             # Replacing nan values
             df.replace([' ?', np.NAN], inplace=True)
+            df['workclass'] = df['workclass'].str.strip()
+            df['marital-status'] = df['marital-status'].str.strip()
+            df['occupation'] = df['occupation'].str.strip()
+            df['relationship'] = df['relationship'].str.strip()
+            df['race'] = df['race'].str.strip()
+            df['sex'] = df['sex'].str.strip()
+            df['country'] = df['country'].str.strip()
 
             df.replace({" <=50K": "less", " >50K": "greater"}, inplace=True)
 

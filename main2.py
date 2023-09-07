@@ -21,7 +21,7 @@ logging.info("started")
 def predict_datapoint():
     try:
         if request.method == 'GET':
-            return render_template('index.html')
+            return render_template('test.html')
         else:
             data = CustomData(
                 age=float(request.form.get('Age')),
@@ -43,12 +43,14 @@ def predict_datapoint():
         print(pred_df)
         predict_pipeline = PredictPipeline()
         results = predict_pipeline.predict(pred_df)
+        print(results)
 
         if results[0] == 1:
-            results = "Salary greater Than 50k"
+            result = "Salary less Than 50k"
+
         else:
-            results = "Salary not greater than 50k"
-        return render_template('index.html', results=results)
+            result = "Salary greater than 50k"
+        return render_template('test.html', results=result)
     except Exception as e:
         raise CustomException(error_message=e, error_detail=sys)
 
