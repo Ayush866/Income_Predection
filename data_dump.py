@@ -3,7 +3,7 @@ import pandas as pd
 import json
 import urllib.parse
 # Provide the mongodb localhost url to connect python to mongodb.
-client = pymongo.MongoClient("mongodb+srv://AyushBisht:I2CA4IX6pWI5r1Kw@cluster0.id9ccjp.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://ayush:admin@cluster0.upyxbqo.mongodb.net/?retryWrites=true&w=majority")
 
 
 
