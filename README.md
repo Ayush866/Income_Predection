@@ -63,9 +63,9 @@ There are a total of 48,842 rows of data, and 3,620 with missing values, leaving
 
 ## Screenshots
 
-![Project Structure](https://github.com/Ayush866/Ineuron-Intership-Project/blob/main/screenshot/Desktop%20Screenshot%202023.04.06%20-%2015.09.03.77.png?raw=true)
+![Project Structure](https://github.com/Ayush866/Income_predection/blob/main/Project_Structure.png)
 
-![Interface](https://github.com/Ayush866/Ineuron-Intership-Project/blob/main/screenshot/Desktop%20Screenshot%202023.04.06%20-%2023.44.35.29.png?raw=true)
+![Interface](https://github.com/Ayush866/Income_predection/blob/main/Project_Interface.png)
 
 
 ## Demo
