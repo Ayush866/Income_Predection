@@ -93,7 +93,10 @@ class CustomData:
 
             }
 
-            return pd.DataFrame(custom_data_input_dict)
+            df = pd.DataFrame(custom_data_input_dict)
+            # Remove leading and trailing spaces from all columns
+            df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+            return df
 
         except Exception as e:
             raise CustomException(e, sys)

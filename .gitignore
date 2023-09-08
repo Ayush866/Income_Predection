@@ -7,7 +7,7 @@ artifact
 *.so
 *. csv
 prediction
-
+saved_models
 demotest.py
 logs
 artifacts
